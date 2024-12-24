@@ -1,0 +1,824 @@
+
+
+.quicksand-m {
+  font-family : "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.bg{
+  position:absolute;
+  height: 65%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textforimage{
+  display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 22rem;
+    left: 12rem;
+    padding: 0%;
+    margin-bottom: 10px;
+  
+}
+
+.Nav{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  font-size: medium;
+  padding-bottom: 2px;
+  border-bottom: solid 1px lightgrey ;
+  margin-right:25px;
+  padding-top: 0px;
+  
+
+}
+
+.buttonGroup{
+  display: flex;
+    flex-direction: row;
+    margin-left: 32%;
+    gap: 10px;
+    height: max-content;
+}
+
+.SearchareaDiv{
+  position: relative;
+  right: 70px;
+  top: 37px;
+}
+
+.card-section{
+  position: absolute;
+  left: 10%;
+}
+
+.Searcharea{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  
+
+  margin-left: 44%;
+
+}
+
+.Icons{
+      /* display: grid
+  ; */
+      /* display: contents; */
+      display: flex;
+    flex-direction: row;
+   align-items: baseline;
+   margin-left: 20rem;
+}
+
+/* Hero styles */
+.hero-container {
+  position: relative;
+  text-align: center;
+  height: 65vh; /* Reduced height for the hero section */
+  overflow: hidden; /* Ensure content does not overflow */
+  padding-bottom: 0;
+}
+
+
+.bg {
+  position: absolute;
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  height: 100%; /* Full height to cover the container */
+  width: 100%; /* Full width to cover the container */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  z-index: -1; /* Ensure the image is behind the text */
+}
+
+.textforimage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: flex-start; /* Align items to the left */
+  position: absolute; /* Position absolute to the container */
+  top: 20rem; /* Original position for larger screens */
+  left: 10%; /* Move text more to the left */
+  transform: translateY(-50%); /* Center the element vertically */
+  z-index: 1; /* Ensure text is above the background */
+  padding: 10px; /* Add some padding for better spacing */
+  color: white; /* Set text color to white */
+  margin-bottom: 0px; /* Add bottom margin */
+}
+
+.hero-title {
+  font-family: sans-serif;
+  font-size: 32px; /* Reduced font size */
+  font-weight: 600;
+  margin: 0; /* Remove default margin */
+}
+
+.hero-subtitle {
+  font-family: sans-serif;
+  font-size: 16px; /* Reduced font size */
+  margin: 0; /* Remove default margin */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .textforimage {
+    top: 15rem; /* Adjust position for smaller screens */
+    left: 5%; /* Adjust left position for smaller screens */
+  }
+
+  .hero-title {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .hero-subtitle {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .textforimage {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-title {
+    font-size: 32px; /* Default font size for larger screens */
+  }
+
+  .hero-subtitle {
+    font-size: 16px; /* Default font size for larger screens */
+  }
+}
+
+/* Ensure Mainsection takes full width and centers content */
+.Nav {
+  width: 100%; /* Set width to 100% for all screens */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between nav items and button group */
+  align-items: center; /* Center items vertically */
+  padding: 0 5px; /* Reduced horizontal padding */
+}
+
+/* Media Queries for Mainsection */
+@media (max-width: 768px) {
+  .Nav {
+    flex-direction: row; /* Keep items in a row on smaller screens */
+    align-items: center; /* Center items vertically */
+    padding: 0 5px; /* Reduced horizontal padding */
+  }
+
+  .nav {
+    margin-bottom: 0; /* Remove margin for better spacing */
+    flex-wrap: nowrap; /* Prevent wrapping of nav items */
+    justify-content: flex-start; /* Align nav items to the start */
+    width: auto; /* Allow nav to take available space */
+  }
+
+  .nav-item {
+    margin-right: 5px; /* Reduced margin between nav items */
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .buttonGroup {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align buttons to the end */
+    margin-left: auto; /* Push button group to the right */
+  }
+
+  .dropdown-toggle {
+    width: auto; /* Set width to auto for dropdown button */
+    margin-bottom: 0; /* Remove margin below dropdown */
+  }
+
+  .btn {
+    margin-left: 5px; /* Reduced margin between buttons */
+    width: auto; /* Set width to auto for buttons on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .Nav {
+    flex-direction: row; /* Keep items in a row for larger screens */
+    justify-content: flex-start; /* Align nav items to the start */
+    padding: 0 10px; /* Slightly increased padding for larger screens */
+  }
+
+  .nav {
+    margin-bottom: 0; /* Remove margin for nav items on larger screens */
+    justify-content: flex-start; /* Align nav items to the start */
+    flex-grow: 1; /* Allow nav to take available space */
+  }
+
+  .nav-item {
+    margin-right: 0px; /* Reduced margin between nav items */
+    font-size: 16px; /* Default font size for larger screens */
+  }
+
+  
+
+  .btn {
+    width: auto; /* Set width to auto for buttons on larger screens */
+    margin-left: 5px; /* Reduced margin between buttons */
+  }
+}
+
+/* Additional Media Queries for Larger Screens */
+@media (min-width: 1024px) {
+ 
+}
+
+/* Ensure Mainsection takes full width and centers content */
+.Nav {
+  width: 100%; /* Set width to 100% for all screens */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between nav items and button group */
+  align-items: center; /* Center items vertically */
+  padding: 0 5px; /* Reduced horizontal padding */
+}
+
+/* Media Queries for Mainsection */
+@media (max-width: 768px) {
+  .Nav {
+    display: none; /* Hide the navigation items and button group on mobile */
+  }
+
+  .mobile-posts {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between posts text and dropdown */
+    align-items: center; /* Center items vertically */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    width: 100%; /* Full width */
+  }
+
+  .mobile-posts span {
+    font-size: 16px; /* Font size for posts text */
+    font-weight: bold; /* Bold text */
+  }
+
+  .dropdown {
+    margin-left: 10px; /* Space between posts text and dropdown */
+  }
+
+  .dropdown-toggle {
+    background-color: lightgrey; /* Grey background for dropdown */
+  }
+}
+
+@media (min-width: 769px) {
+  .Nav {
+    flex-direction: row; /* Keep items in a row for larger screens */
+    justify-content: space-between; /* Space between nav items and button group */
+    padding: 0 10px; /* Slightly increased padding for larger screens */
+  }
+
+  .nav {
+    margin-bottom: 0; /* Remove margin for nav items on larger screens */
+    justify-content: flex-start; /* Align nav items to the start */
+    flex-grow: 1; /* Allow nav to take available space */
+  }
+
+  .nav-item {
+    margin-right: 10px; /* Reduced margin between nav items */
+    font-size: 16px; /* Default font size for larger screens */
+  }
+
+  .buttonGroup {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align buttons to the end */
+    margin-left: 10px; /* Reduced space between nav items and button group */
+  }
+
+  .btn {
+    width: auto; /* Set width to auto for buttons on larger screens */
+    margin-left: 5px; /* Reduced margin between buttons */
+  }
+}
+
+/* Additional Media Queries for Larger Screens */
+@media (min-width: 1024px) {
+  .Nav {
+    padding: 0 20px; /* Add padding for larger screens */
+  }
+
+  .nav-item {
+    font-size: 18px; /* Increase font size for larger screens */
+  }
+
+  .btn {
+    padding: 10px 20px; /* Increase padding for buttons on larger screens */
+  }
+}
+/* Ensure Mainsection takes full width and centers content */
+.Nav {
+  width: 100%; /* Set width to 100% for all screens */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between nav items and button group */
+  align-items: center; /* Center items vertically */
+  padding: 0 5px; /* Reduced horizontal padding */
+}
+
+/* Media Queries for Mainsection */
+@media (max-width: 768px) {
+  .Nav {
+    display: none; /* Hide the navigation items and button group on mobile */
+  }
+
+  .mobile-posts {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between posts text and dropdown */
+    align-items: center; /* Center items vertically */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    width: 100%; /* Full width */
+  }
+
+  .mobile-posts span {
+    font-size: 16px; /* Font size for posts text */
+    font-weight: bold; /* Bold text */
+  }
+
+  .dropdown {
+    margin-left: 10px; /* Space between posts text and dropdown */
+  }
+
+  .dropdown-toggle {
+    background-color: lightgrey; /* Grey background for dropdown */
+  }
+}
+
+@media (min-width: 769px) {
+  .Nav {
+    flex-direction: row; /* Keep items in a row for larger screens */
+    justify-content: space-between; /* Space between nav items and button group */
+    padding: 0 10px; /* Slightly increased padding for larger screens */
+  }
+
+  .nav {
+    margin-bottom: 0; /* Remove margin for nav items on larger screens */
+    justify-content: flex-start; /* Align nav items to the start */
+    flex-grow: 1; /* Allow nav to take available space */
+  }
+
+  .nav-item {
+    margin-right: 10px; /* Reduced margin between nav items */
+    font-size: 16px; /* Default font size for larger screens */
+  }
+
+  .buttonGroup {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align buttons to the end */
+    margin-left: 10px; /* Reduced space between nav items and button group */
+  }
+
+  .btn {
+    width: auto; /* Set width to auto for buttons on larger screens */
+    margin-left: 5px; /* Reduced margin between buttons */
+  }
+
+  /* Hide mobile posts when screen is >= 789px */
+  .mobile-posts {
+    display: none; /* Hide posts and dropdown button on larger screens */
+  }
+}
+/* Ensure Mainsection takes full width and centers content */
+.Nav {
+  width: 100%; /* Set width to 100% for all screens */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between nav items and button group */
+  align-items: center; /* Center items vertically */
+  padding: 0 5px; /* Reduced horizontal padding */
+}
+
+/* Media Queries for Mainsection */
+@media (max-width: 768px) {
+  .Nav {
+    display: none; /* Hide the navigation items and button group on mobile */
+  }
+
+  .mobile-posts {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between posts text and dropdown */
+    align-items: center; /* Center items vertically */
+    padding: 5px; /* Add some padding */
+    margin: 0; /* No margin */
+    width: 100%; /* Full width */
+  }
+
+  .mobile-posts span {
+    font-size: 16px; /* Font size for posts text */
+    font-weight: bold; /* Bold text */
+    margin-right: 10px; /* Add a little margin to the right */
+  }
+
+  .dropdown {
+    margin-left: 10px; /* Space between posts text and dropdown */
+  }
+
+  .dropdown-toggle {
+    background-color: lightgrey; /* Grey background for dropdown */
+    padding: 5px 10px; /* Add padding to the dropdown button */
+  }
+}
+
+@media (min-width: 769px) {
+  .Nav {
+    flex-direction: row; /* Keep items in a row for larger screens */
+    justify-content: space-between; /* Space between nav items and button group */
+    padding: 0 10px; /* Slightly increased padding for larger screens */
+  }
+
+  .nav {
+    margin-bottom: 0; /* Remove margin for nav items on larger screens */
+    justify-content: flex-start; /* Align nav items to the start */
+    flex-grow: 1; /* Allow nav to take available space */
+  }
+
+  .nav-item {
+    margin-right: 10px; /* Reduced margin between nav items */
+    font-size: 16px; /* Default font size for larger screens */
+  }
+
+  .buttonGroup {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align buttons to the end */
+    margin-left: 10px; /* Reduced space between nav items and button group */
+  }
+
+  .btn {
+    width: auto; /* Set width to auto for buttons on larger screens */
+    margin-left: 5px; /* Reduced margin between buttons */
+  }
+
+  /* Hide mobile posts when screen is >= 789px */
+  .mobile-posts {
+    display: none; /* Hide posts and dropdown button on larger screens */
+  }
+}
+
+/* Base styles for cards */
+.card {
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.card-img-top {
+  height: 17rem; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Media Queries */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduce padding on mobile */
+  }
+
+  .card {
+    margin-bottom: 15px; /* Reduce space between cards */
+  }
+
+  .card-title {
+    font-size: 16px; /* Smaller font size for titles */
+  }
+
+  .card-text {
+    font-size: 14px; /* Smaller font size for text */
+  }
+
+  .card-body {
+    padding: 10px; /* Reduce padding in card body */
+  }
+
+  .Icons {
+    margin-left: 40%; /* Adjust icon alignment */
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px; /* Moderate padding for tablets */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Maintain space between cards */
+  }
+
+  .card-title {
+    font-size: 18px; /* Slightly smaller font size for titles */
+  }
+
+  .card-text {
+    font-size: 16px; /* Slightly smaller font size for text */
+  }
+
+  .Icons {
+    margin-left: 50%; /* Adjust icon alignment */
+  }
+}
+
+/* For larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 30px; /* More padding for larger screens */
+  }
+
+  .card {
+    margin-bottom: 25px; /* Maintain space between cards */
+  }
+
+  .card-title {
+    font-size: 20px; /* Default font size for titles */
+  }
+
+  .card-text {
+    font-size: 18px; /* Default font size for text */
+  }
+
+  .Icons {
+    margin-left: 60%; /* Adjust icon alignment */
+  }
+}
+
+/* Base styles for cards */
+.card {
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.card-img-top {
+  height: 17rem; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Media Queries */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduce padding on mobile */
+  }
+
+  .card {
+    margin-bottom: 15px; /* Reduce space between cards */
+  }
+
+  .card-title {
+    font-size: 16px; /* Smaller font size for titles */
+  }
+
+  .card-text {
+    font-size: 14px; /* Smaller font size for text */
+  }
+
+  .card-body {
+    padding: 10px; /* Reduce padding in card body */
+  }
+
+  .Icons {
+    margin-left: 40%; /* Adjust icon alignment */
+  }
+
+  /* Hide the search area div when screen width is less than 789px */
+  .Searcharea {
+    display: none; /* Hide the search area */
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px; /* Moderate padding for tablets */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Maintain space between cards */
+  }
+
+  .card-title {
+    font-size: 18px; /* Slightly smaller font size for titles */
+  }
+
+  .card-text {
+    font-size: 16px; /* Slightly smaller font size for text */
+  }
+
+  .Icons {
+    margin-left: 50%; /* Adjust icon alignment */
+  }
+}
+
+/* For larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 30px; /* More padding for larger screens */
+  }
+
+  .card {
+    margin-bottom: 25px; /* Maintain space between cards */
+  }
+
+  .card-title {
+    font-size: 20px; /* Default font size for titles */
+  }
+
+  .card-text {
+    font-size: 18px; /* Default font size for text */
+  }
+
+  .Icons {
+    margin-left: 60%; /* Adjust icon alignment */
+  }
+}
+/* Base styles for cards */
+.card {
+  width: 100%; /* Make cards occupy full width */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.card-img-top {
+  height: 300px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Card body styles */
+.card-body {
+  padding: 15px; /* Padding inside card body */
+}
+
+/* Card footer styles */
+.card-footer {
+  display: flex; /* Flexbox for footer */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
+}
+
+/* Media Queries */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduce padding on mobile */
+  }
+
+  .card {
+    margin-bottom: 15px; /* Reduce space between cards */
+  }
+
+  /* Hide the search area div when screen width is less than 789px */
+  .Searcharea {
+    display: none; /* Hide the search area */
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px; /* Moderate padding for tablets */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Maintain space between cards */
+  }
+}
+
+/* For larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 30px; /* More padding for larger screens */
+  }
+
+  .card {
+    margin-bottom: 25px; /* Maintain space between cards */
+  }
+}
+
+/* Base styles for cards */
+.card {
+  width: 100%; /* Make cards occupy full width */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.card-img-top {
+  height: 300px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Card body styles */
+.card-body {
+  padding: 15px; /* Padding inside card body */
+}
+
+/* Card footer styles */
+.card-footer {
+  display: flex; /* Flexbox for footer */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
+}
+
+/* Media Queries */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reduce padding on mobile */
+  }
+
+  .card {
+    margin-bottom: 15px; /* Reduce space between cards */
+  }
+
+  /* Hide the search area div when screen width is less than 789px */
+  .Searcharea {
+    display: none; /* Hide the search area */
+  }
+}
+
+/* For tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px; /* Moderate padding for tablets */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Maintain space between cards */
+  }
+}
+
+/* For larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 30px; /* More padding for larger screens */
+  }
+
+  .card {
+    margin-bottom: 25px; /* Maintain space between cards */
+  }
+}
+/* Media Queries */
+
+/* For mobile devices */
+@media (max-width: 788px) {
+  .container {
+    padding: 0; /* Remove padding for full-width cards */
+    width: 100vw; /* Set container width to full viewport width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .card {
+    width: 100%; /* Make cards occupy full width */
+    margin: 0; /* Remove margin to stack cards */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  }
+
+  .card-img-top {
+    height: 300px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+  }
+
+  .card-body {
+    padding: 10px; /* Reduce padding in card body */
+  }
+
+  .card-title {
+    font-size: 18px; /* Adjust title font size */
+    font-weight: bold; /* Make title bold */
+  }
+
+  .card-text {
+    font-size: 16px; /* Adjust text font size */
+  }
+
+  .card-footer {
+    display: flex; /* Flexbox for footer */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    padding: 10px 0; /* Add padding for footer */
+  }
+
+  .Icons {
+    display: flex; /* Flexbox for icons */
+    align-items: center; /* Center icons vertically */
+  }
+
+  .Icons i {
+    margin-right: 5px; /* Space between icon and text */
+  }
+}
