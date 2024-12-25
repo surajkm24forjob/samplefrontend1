@@ -3,10 +3,10 @@ import PeopleIcon from '@mui/icons-material/People';
 const Mainsection = () => {
   return (
     <>
-    <div className="py-4 container Nav" style={{top:'2rem'}}>
+    <div className="py-4 px-4 container-fluid Nav" style={{top:'2rem'}}>
        <ul className="nav" style={{marginBottom: '-14px'}}>
   <li className="nav-item">
-    <a className="nav-link active"  aria-current="page" href="#">All Post(32)</a>
+    <a className="nav-link text-black"  aria-current="page" href="#">All Post(32)</a>
   </li> 
   <li className="nav-item">
     <a className="nav-link" href="#">Article</a>

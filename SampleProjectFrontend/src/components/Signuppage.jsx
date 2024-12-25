@@ -36,7 +36,7 @@ export default function Signuppage () {
                 <div className="col col-md-6 text-end">
                    <p className="my-2" style={{fontSize:'13px', fontWeight:'400'}}>Don&apos;t have an account yet? <a href="#" type="button" className="link-underline-light" data-bs-target="#exampleModal1" style={{fontSize:'12px', fontWeight:'600'}} data-bs-toggle='modal'>Create new for free!</a></p> 
                    
-                   <img className="px-5 g-0" style={{height: 'auto',width: '23rem',position: 'absolute',left: '20rem'}} src="../src/assets/image.png" alt="" />
+                   <img className="px-5 g-0" style={{height: 'auto',width: '23rem',position: 'absolute',left: '20rem'}} src="/image.png" alt="" />
                    
                 </div>
                
@@ -50,8 +50,8 @@ export default function Signuppage () {
        <div className="row row-md-2">
        <div className="row row-cols-2 col-12">
          <div className="d-grid gap-2">
-        <button className="btn" style={{position:'relative',left:'7px',border:'solid 0.1px lightgrey'}}  type="button"><img style={{height: 'auto',width: '11%'}} src='../src/assets/facebook.svg'/> <span style={{fontSize:'15px', fontWeight:'600'}}>Sign in with Facebook</span></button>
-        <button className="btn" style={{position:'relative',left:'7px',border:'solid 0.1px lightgrey'}} type="button"><img style={{    height: 'auto',width: '7%'}} src='../src/assets/google.svg'/> <span style={{fontSize:'15px', fontWeight:'600'}} >Sign in with Google</span></button>
+        <button className="btn" style={{position:'relative',left:'7px',border:'solid 0.1px lightgrey'}}  type="button"><img style={{height: 'auto',width: '11%'}} src='/facebook.svg'/> <span style={{fontSize:'15px', fontWeight:'600'}}>Sign in with Facebook</span></button>
+        <button className="btn" style={{position:'relative',left:'7px',border:'solid 0.1px lightgrey'}} type="button"><img style={{    height: 'auto',width: '7%'}} src='/google.svg'/> <span style={{fontSize:'15px', fontWeight:'600'}} >Sign in with Google</span></button>
         <button className="btn" style={{position:'relative',left:'7px'}} type="button"><span style={{fontSize:'11px', fontWeight:'650'}} >Forgot Password?</span></button>
         </div>
        
