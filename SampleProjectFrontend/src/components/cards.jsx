@@ -6,7 +6,7 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 export default function Cards () {
   return (
     <>
-    <div className="container d-flex flex-row my-5 justify-content-center align-items-center text-center px-5 py-2 mx-auto left-2 card-section">
+    <div className="container d-flex flex-row my-5 align-items-start text-center px-5 py-2 mx-auto card-section">
       <div className='row'>
         <div className="col-8">
         <div className="CardSection">
