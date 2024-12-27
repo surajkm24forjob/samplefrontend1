@@ -6,11 +6,11 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 export default function Cards () {
   return (
     <>
-    <div className="container d-flex flex-row my-5 align-items-start text-center px-5 py-2 mx-auto card-section">
-      <div className='row'>
-        <div className="col-8">
-        <div className="CardSection">
-      <div className="card text-start mb-3">
+    <div className="container-fluid w-85 p-4 my-5 px-5 py-2 mx-auto card-section">
+      <div className='row mx-auto'>
+        <div className="col my-3 px-5" style={{maxWidth:'100%'}}>
+        <div className="CardSection d-flex flex-column align-items-center w-100 h-75">
+      <div className="card text-start mb-3 h-100 d-flex justify-content-start w-75">
   <img src="/sample1.jpg" style={{height:'17rem'}} className="card-img-top img-w-24" alt="..."/>
   <div className="card-body">
     <h5 className="card-title" style={{fontSize:'19px', fontWeight:'600', position:'relative'}}><img style={{    height: 'auto',width: '3.5%'}} src='/Writing.png'/> <span style={{position:'relative',top:'3px'}}>Article</span></h5>
@@ -99,12 +99,12 @@ export default function Cards () {
 
       </div>
         </div>
-        <div className="col-sm-4">
+        <div className="col w-50">
         <div className="Searcharea">
       <div className='SearchareaDiv'>
       <input type="text" name="" id="" className='form-control form-control-md' style={{border: 'none',borderBottom: '1px solid lightgrey' ,  marginTop: '5rem', position: 'relative',bottom: '50%',left: '43%'}} placeholder="&#xf041; Search"  />
       <CreateIcon style={{position: 'relative',bottom: ' 65%',left: "86%"}}/>
-      <p style={{fontSize:'12px',color:'lightgrey',fontWeight:'lighter',WebkitTextStroke:'0.4px grey',position: 'relative',bottom: '53%',left: '73px'}}><i className="fa-solid fa-circle-exclamation"></i> Your location help us server better and extend a personalised experience</p>
+      <p style={{fontSize:'12px',color:'lightgrey',fontWeight:'lighter',WebkitTextStroke:'0.4px grey',position: 'relative',bottom: '53%',left: '7rem', margin:'10px'}}><i className="fa-solid fa-circle-exclamation"></i> Your location help us server better and extend a personalised experience</p>
       </div>
       
     </div>

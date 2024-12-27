@@ -69,8 +69,10 @@
 }
 
 .card-section{
-  position: absolute;
-  left: 7%;
+      display: block;
+     
+      position: relative;
+      
 }
 
 .Searcharea{
@@ -260,6 +262,3 @@
   }
 }
 
-@media (max-width:1200px){
-
-}
