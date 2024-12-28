@@ -4,9 +4,9 @@ import LoginPage from "./LoginPage"
 const Navbar = () => {
   return (
     <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary border rounded">
   <div className="container-fluid">
-    <a className="navbar-brand mx-5 quicksand-m" >ATG.WORLD</a>
+    <a className="navbar-brand py-1 quicksand-m nav1" >ATG.WORLD</a>
     <button
           className="navbar-toggler"
           type="button"

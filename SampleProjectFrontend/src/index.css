@@ -75,6 +75,27 @@
       
 }
 
+
+@media (width:377px) {
+  .Mainmap{
+    max-width: 100%;
+  }  
+
+  .nav1{
+    font-size: 30px;
+    margin: 5px;
+  }
+
+    .bg{
+    
+      height: 25%;
+      width: 100%;
+
+    }
+}
+
+
+
 .Searcharea{
   display: flex;
   flex-direction: row;
